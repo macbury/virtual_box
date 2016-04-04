@@ -184,7 +184,7 @@ class IoBus
     when :lsi_logic_sas
       'LSILogicSAS'
     end
-    params.push '--sataportcount', max_ports.to_s
+    params.push '--portcount', max_ports.to_s
     params.push '--hostiocache', (no_cache ? 'off' : 'on')
     params.push '--bootable', (bootable ? 'on' : 'off')
   end
